@@ -1,4 +1,4 @@
-FROM golang:1.20-alpine as builder
+FROM <ACCOUNT-ID>.dkr.ecr.<REGION>.amazonaws.com/golang:1.20-alpine as builder
 
 ADD api/ /go/src/github.com/globocom/huskyCI/api/
 WORKDIR /go/src/github.com/globocom/huskyCI/api/
